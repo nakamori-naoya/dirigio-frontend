@@ -20,7 +20,7 @@
     "isolatedModules": true,
     "noEmit": true,
     "noImplicitReturns": true,
-    "noUnusedLocals": true,
+    // "noUnusedLocals": true,
     "noUnusedParameters": true,
     "jsx": "react-jsx"
   },
