@@ -4,13 +4,16 @@ import SideBar from '../components/Admin/SideBar'
 
 const TopPage = () => {
   return (
-    <>
-      <NavBar />
+    <div className="relative">
+      <div className="absolute w-screen z-10">
+        <NavBar />
+        aaaaaaaaaaaaaaaaaaaaaaaaaa
+      </div>
       <div className="flex">
         <SideBar />
         <Presenter />
       </div>
-    </>
+    </div>
   )
 }
 
