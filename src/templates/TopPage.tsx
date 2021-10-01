@@ -7,7 +7,7 @@ const TopPage = () => {
     <div className="relative">
       <div className="absolute w-screen z-10">
         <NavBar />
-        aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+        aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
       </div>
       <div className="flex">
         <SideBar />
