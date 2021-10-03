@@ -12,9 +12,9 @@ import HelpIcon from '@mui/icons-material/Help'
 
 export default function SideBar() {
   return (
-    <Paper className="w-1/5 border-r-2  h-screen pt-20 relative">
+    <Paper className="w-1/5  border-r-2  h-screen pt-20 relative ">
       <IconMenu
-        icon={<HomeIcon fontSize="large" className="ml-6" />}
+        icon={<HomeIcon fontSize="large" className="ml-6 " />}
         menuName="ホーム"
       />
       <IconMenu
@@ -41,7 +41,7 @@ export default function SideBar() {
         icon={<SellIcon fontSize="large" className="ml-6" />}
         menuName="プラン管理"
       />
-      <div className="absolute bottom-0 w-full">
+      <div className=" w-full bottom-0 absolute ">
         <IconMenu
           icon={<HelpIcon fontSize="large" className="ml-6" />}
           menuName="お問い合わせ"

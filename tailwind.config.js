@@ -16,10 +16,4 @@ module.exports = {
     extend: {},
   },
   plugins: [],
-  height: {
-    '1/4-screen': '25vh',
-    '1/2-screen': '50vh',
-    '3/4-screen': '75vh',
-    '4/5-screen': '80vh',
-  },
 }
