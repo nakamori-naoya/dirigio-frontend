@@ -4,14 +4,17 @@ import { SelectChangeEvent } from '@mui/material/Select'
 import TitleZone from './TitleZone'
 import PrefectureSelectZone from './PrefectureSelectZone'
 import { SelectedPrefecture } from 'datas/prefectures'
+import BoxTextInput from './BoxTextInput'
 
-const InputAdress = () => {
+const InputAdressZone = () => {
   const [selectedPrefecture, setSelectedPrefecture] =
     useState<SelectedPrefecture>('未選択')
   const [municipalities, setMunicipalities] = useState<string>('')
 
-  const inputMunicipalities = (event: SelectChangeEvent) => {
-    setMunicipalities(event.target.value as string)
+  const inputMunicipalities = (
+    event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
+  ) => {
+    setMunicipalities(event.target.value)
   }
 
   const handleChange = (event: SelectChangeEvent) => {
@@ -29,9 +32,17 @@ const InputAdress = () => {
           handleChange={handleChange}
         />
         <TitleZone isRequired={false} titleName="市町村" />
+        <BoxTextInput
+          value={municipalities}
+          placeholder="中野区"
+          fullWidth={true}
+          required={false}
+          onChange={inputMunicipalities}
+          multiline={false}
+        />
       </div>
     </Paper>
   )
 }
 
-export default InputAdress
+export default InputAdressZone

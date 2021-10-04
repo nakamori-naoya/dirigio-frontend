@@ -1,7 +1,7 @@
 import { Divider } from '@mui/material'
 import { useState } from 'react'
 import GoogleMapReact from 'google-map-react'
-import InputAdress from './InputAdress'
+import InputAdressZone from './InputAdressZone'
 
 //latitude/longitude  緯度／経度
 const defaultLatLng = {
@@ -91,7 +91,7 @@ const Presenter = () => {
           />
         </div>
         <div className="w-1/2 ml-20 -mb-20 -mr-10 border-2">
-          <InputAdress />
+          <InputAdressZone />
         </div>
 
         {/* <div className="text-center">
