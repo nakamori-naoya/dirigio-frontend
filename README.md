@@ -1,10 +1,10 @@
+## アプリ URL
+
+https://index-portfolio-e083c.web.app/
+
 ### 応用
 
-```
-アプリURL: https://index-portfolio-e083c.web.app/
-```
-
-作成したものについて UI の改善案
+#### 作成したものについて UI の改善案
 
 ```
 1. 都道府県の選択がない状態では、「地図の位置を確認する」ボタンがクリックできない
