@@ -92,7 +92,7 @@ const Presenter = () => {
         >
           <GoogleMapReact
             bootstrapURLKeys={{
-              key: 'AIzaSyBFc9vI8y7w-YZYR2IZ-2VHs8LnGlaKXiQ',
+              key: process.env.REACT_APP_API_KEY,
             }}
             defaultCenter={defaultLatLng}
             defaultZoom={16}
