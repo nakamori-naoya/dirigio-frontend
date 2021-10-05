@@ -13,14 +13,11 @@ const BoxTextInput: React.FC<Props> = React.memo(
   ({ value, placeholder, fullWidth, required, onChange, multiline }) => {
     return (
       <TextField
-        className="bg-white font-serif"
-        variant="outlined"
+        size="small"
+        className="bg-white font-serif min-w-96"
         value={value}
         placeholder={placeholder}
         fullWidth={fullWidth}
-        InputLabelProps={{
-          shrink: true,
-        }}
         required={required}
         onChange={onChange}
         autoComplete="off"

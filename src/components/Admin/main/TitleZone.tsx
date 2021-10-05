@@ -4,9 +4,9 @@ type Props = {
   isRequired: boolean
   titleName: String
 }
-const TitleZone: React.FC<Props> = ({ isRequired, titleName }) => {
+const TitleZone: React.FC<Props> = React.memo(({ isRequired, titleName }) => {
   return (
-    <div className="flex mt-5 mb-3">
+    <div className="flex mt-4 mb-2">
       <h2 className="text-left text-xl mr-2">{titleName}</h2>
       {isRequired ? (
         <h3 className="bg-pink-600 text-white px-2 py-1 text-sm rounded-md">
@@ -19,6 +19,6 @@ const TitleZone: React.FC<Props> = ({ isRequired, titleName }) => {
       )}
     </div>
   )
-}
+})
 
 export default TitleZone
