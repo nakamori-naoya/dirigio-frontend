@@ -6,6 +6,7 @@ import PrefectureSelectZone from './PrefectureSelectZone'
 import { SelectedPrefecture } from 'datas/prefectures'
 import BoxTextInput from './BoxTextInput'
 import { Button } from '@mui/material'
+import AlertDialogSlide from './Dialog'
 
 type Props = {
   search: (obj: { addressInfo: string }) => void
@@ -46,10 +47,6 @@ const InputAdressZone: React.FC<Props> = React.memo(({ search, location }) => {
     },
     [setSelectedPrefecture],
   )
-
-  const alertLocation = () => {
-    alert(`緯度：${location.lat}  経度：${location.lng}`)
-  }
 
   return (
     <Paper
@@ -120,12 +117,7 @@ const InputAdressZone: React.FC<Props> = React.memo(({ search, location }) => {
           <button className="bg-gray-300 text-white  text-lg px-8 py-auto my-2 py-2 rounded-md">
             キャンセル
           </button>
-          <button
-            onClick={alertLocation}
-            className="bg-green-400 text-white  text-lg px-8 py-auto my-2 py-2 rounded-md"
-          >
-            更新する
-          </button>
+          <AlertDialogSlide location={location} />
         </div>
       </div>
     </Paper>
